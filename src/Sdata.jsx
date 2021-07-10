@@ -19,5 +19,7 @@ const Sdata = [
     title: "A Marvel Original Movie",
     link: "https://www.hotstar.com/in/movies/avengers-endgame/1260013556",
   },
+  
+  
 ];
 export default Sdata;
