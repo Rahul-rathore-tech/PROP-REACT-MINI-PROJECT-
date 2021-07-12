@@ -6,6 +6,7 @@ import Sdata from "./Sdata";
 function ncard(val) {
   return (
     <Card
+    key={val.key}
       imgsrc={val.imgsrc}
       title={val.title}
       mname={val.mname}
