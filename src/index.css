@@ -1,101 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Josefin Sans;
+  box-sizing: border-box;
+  font-family: Josefin Sans;
 }
-
-body {
-    background-color: aqua;
+#header {
+  width: 100%;
+  height: 60vh;
+  margin-top: 70px;
 }
-
-.heading_style {
-    color: #000000;
-    text-align: center;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-family: Josefin Sans;
-    text-shadow: 0px 2px 4px #ffe9c5;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    background-color: white;
-
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
 }
-
-.cards {
-    width: 100%;
-    height: auto;
+#header .brand-name {
+  color: #3498db;
 }
-
-.card {
-    margin: 6%;
-    transition: all 0.3s cubic-bezier(0.180, 0.885, 0, 1);
-    background-color: rgb(255, 255, 255);
-    width: 21.25%;
-    border-radius: 12px;
-    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
-    float: left;
-    
+.header h2 {
+  color: #484848;
+  font-size: 24px;
 }
-
-
-.card:hover {
-    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-    transform: scale(1.05, 1.05);
+.btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-top: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+  padding: 11px 33px;
 }
-
-.card_img {
-    width: 100%;
-    height: 235px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+.btn-get-started:hover {
+  background-color: #3498db;
+  color: white;
 }
-
-img {
-    object-fit: cover;
+.header-img {
+  text-align: right;
 }
-
-.card_info {
-    background-color: white;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    padding: 16px 24px 24px 24px;
-
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
-
-.card_category {
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 500;
-    color: #868686;
-
-}
-
-.card_title {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    background-color: #fff;
-    text-transform: capitalize;
-}
-
-button {
-    padding: 8px 9px;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 500;
-    color: #ffffff;
-    border-radius: 2px;
-    background-color: orange;
-    outline: none;
-    border: 1px solid rgb(255, 255, 255);
-    cursor: pointer;
-}
-@media only screen and (max-width: 600px) {
-    .card {
-     
-      width: auto;
-    height: auto;
-    }
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
   }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.menu_active {
+  border-bottom: 1px solid black;
+}
